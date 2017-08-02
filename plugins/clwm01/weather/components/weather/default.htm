@@ -1,0 +1,7 @@
+{% if weatherInfo.message %}
+    <p class="error">{{ weatherInfo.message }}</p>
+{% else %}
+    <h3><i class="icon-{{ weatherInfo.weather[0].icon }}"></i>{{ weatherInfo.name }}</h3>
+    <p class="temp">{{ weatherInfo.main.temp }}°</p>
+    <p class="description">{{ weatherInfo.weather[0].main }}</p>
+{% endif %}

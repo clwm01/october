@@ -1,0 +1,27 @@
+
+{% if article_not_found %}
+
+<div class="container">
+    No records.
+</div>
+
+{% else %}
+<div class="jumbotron title-js">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>{{ article.title }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{ article.content | raw }}
+        </div>
+    </div>
+</div>
+
+{% endif %}

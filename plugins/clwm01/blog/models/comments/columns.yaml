@@ -1,0 +1,10 @@
+columns:
+  id:
+    label: 'id'
+    type: number
+  email:
+    label: 'email'
+    type: text
+  content:
+    label: 'content'
+    type: text

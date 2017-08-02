@@ -1,0 +1,6 @@
+fields:
+    content:
+        label: 'clwm01.comments::lang.plugin.name'
+        span: auto
+        type: text
+        comment: user_id

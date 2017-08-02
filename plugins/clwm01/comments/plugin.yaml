@@ -1,0 +1,18 @@
+plugin:
+    name: 'clwm01.comments::lang.plugin.name'
+    description: 'clwm01.comments::lang.plugin.description'
+    author: 'clwm 01'
+    icon: oc-icon-comments
+    homepage: ''
+permissions:
+    add_comments:
+        tab: 'clwm01.comments::lang.plugin.name'
+        label: 'add comments'
+navigation:
+    comments-main:
+        label: 'clwm01.comments::lang.plugin.name'
+        url: clwm01/comments
+        icon: icon-comments
+        permissions:
+            - view_comments
+        order: '500'

@@ -1,0 +1,4 @@
+title: Index
+modelClass: Clwm01\Comments\Models\CommentsContents
+toolbar:
+    buttons: reorder_toolbar

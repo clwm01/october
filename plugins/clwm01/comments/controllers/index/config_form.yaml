@@ -1,0 +1,10 @@
+name: Index
+form: $/clwm01/comments/models/commentscontents/fields.yaml
+modelClass: Clwm01\Comments\Models\CommentsContents
+defaultRedirect: clwm01/comments/index
+create:
+    redirect: 'clwm01/comments/index/update/:id'
+    redirectClose: clwm01/comments/index
+update:
+    redirect: clwm01/comments/index
+    redirectClose: clwm01/comments/index

@@ -1,0 +1,18 @@
+{% if article_not_found %}
+{% else %}
+<div class="row">
+    <div class="col-md-8">
+        <nav>
+            <ul class="pager">
+                {% if p > 1 %}
+                <li><a href="/clwm01/blog/{{ p - 1}}">prev</a></li>
+                {% endif %}
+
+                {% if p < articles_count %}
+                <li><a href="/clwm01/blog/{{ p + 1 }}">next</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+{% endif %}

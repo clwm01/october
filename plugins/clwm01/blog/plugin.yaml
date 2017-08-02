@@ -1,0 +1,18 @@
+plugin:
+    name: 'clwm01.blog::lang.plugin.name'
+    description: 'clwm01.blog::lang.plugin.description'
+    author: 'clwm01'
+    icon: oc-icon-file-text-o
+    homepage: ''
+permissions:
+    create_article:
+        tab: 'clwm01.blog::lang.plugin.name'
+        label: 'create article'
+navigation:
+    blog:
+        label: 'clwm01.blog::lang.plugin.name'
+        url: clwm01/blog
+        icon: icon-file-text-o
+        permissions:
+            - view_blog
+        order: '500'

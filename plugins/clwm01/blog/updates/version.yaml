@@ -1,0 +1,12 @@
+1.0.1:
+    - 'First version of blog'
+    - builder_table_create_clwm01_blog_articles.php
+1.0.2:
+    - 'create table for comments'
+    - migration102.php
+1.0.3:
+    - 'create tag table.'
+    - migration103.php
+1.0.4:
+    - 'create tags_articles table'
+    - migration104.php

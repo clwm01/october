@@ -1,0 +1,11 @@
+title: 'Blog List'
+modelClass: Clwm01\Blog\Models\Articles
+list: $/clwm01/blog/models/articles/columns.yaml
+recordUrl: 'clwm01/blog/index/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table clwm01_comments_contents'
+    - builder_table_create_clwm01_comments_contents.php
+1.0.3:
+    - 'Updated table clwm01_comments_contents'
+    - builder_table_update_clwm01_comments_contents.php
+1.0.4:
+    - 'Updated table clwm01_comments_contents'
+    - builder_table_update_clwm01_comments_contents_2.php

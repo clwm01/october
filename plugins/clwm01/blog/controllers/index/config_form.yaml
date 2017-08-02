@@ -1,0 +1,10 @@
+name: Articles
+modelClass: Clwm01\Blog\Models\Articles
+form: $/clwm01/blog/models/articles/fields.yaml
+defaultRedirect: clwm01/blog/index
+create:
+    redirect: 'clwm01/blog/index/update/:id'
+    redirectClose: clwm01/blog/index
+update:
+    redirect: clwm01/blog/index
+    redirectClose: clwm01/blog/index

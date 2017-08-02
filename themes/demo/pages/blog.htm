@@ -1,0 +1,16 @@
+title = "Blog"
+url = "/clwm01/blog/:page?1"
+layout = "default"
+
+[latest]
+[prevnext]
+[comments]
+==
+{% component 'latest' %}
+
+<div class="container">
+    {% component 'prevnext' %}
+</div>
+
+
+{% component 'comments' %}

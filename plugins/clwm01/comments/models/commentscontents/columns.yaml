@@ -1,0 +1,12 @@
+columns:
+    id:
+        label: id
+        type: text
+        default: '1'
+        searchable: true
+        sortable: true
+    content:
+        label: content
+        type: text
+        default: '222'
+        searchable: true

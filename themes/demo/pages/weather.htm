@@ -1,0 +1,33 @@
+title = "Weather"
+url = "/demo/weather"
+layout = "default"
+
+[weather]
+country = "ca"
+state = "bc"
+city = "Vancouver"
+units = "metric"
+==
+
+<div class="jumbotron title-js">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Weather</h1>
+                <p>Provide you the information of current weather.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    {% component 'weather' %}
+</div>
+
+
+<br />
+
+<div class="text-center">
+    <p>weather</p>
+</div>
