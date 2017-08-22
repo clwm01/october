@@ -26,15 +26,9 @@ class Latest extends Base
     {
         parent::onRun();
 
-        $p = $this->param('page');
-        $size = 1;
-        $article = Articles::where('is_show', 1)
-            ->orderBy('created_at', 'desc')
-            ->skip(($p - 1) * $size)
-            ->take($size)
-            ->first();
+        $id = $this->param('id');
+        $three_articles = Articles::threeArticles($id);
 
-        $this->page['article'] = $article;
-        $this->page['article_id'] = $article->id;
+        $this->page['three_articles'] = $three_articles;
     }
 }

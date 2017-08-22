@@ -1,7 +1,7 @@
 plugin:
     name: 'clwm01.blog::lang.plugin.name'
     description: 'clwm01.blog::lang.plugin.description'
-    author: 'clwm01'
+    author: clwm01
     icon: oc-icon-file-text-o
     homepage: ''
 permissions:
@@ -16,3 +16,16 @@ navigation:
         permissions:
             - view_blog
         order: '500'
+        sideMenu:
+            view-articles-list:
+                label: Articles
+                url: clwm01/blog
+                icon: icon-file-text
+                permissions:
+                    - view_articles_list
+            view-articles-comments:
+                label: Comments
+                url: clwm01/blog/comments
+                icon: icon-comments
+                permissions:
+                    - view_comments

@@ -30,4 +30,37 @@ class Articles extends Model
         
     }
 
+    // mutator
+    public function getCreatedAtAttribute($value) {
+        return strtotime($value);
+    }
+
+    static function threeArticles($id) {
+        if (!$id) {
+            $article = self::where('is_show', 1)
+                ->orderBy('created_at', 'desc')
+                ->first();
+        } else {
+            $article = self::find($id);
+        }
+
+        $created_at = $article->created_at;
+        $prev = self::where('created_at', '<=', date('Y-m-d H:i:s', $created_at))
+            ->where('id', '<', $article->id)
+            ->orderBy('created_at', 'desc')
+            ->first();
+
+
+        $next = self::where('created_at', '>=', date('Y-m-d H:i:s', $created_at))
+            ->where('id', '>', $article->id)
+            ->orderBy('created_at', 'asc')
+            ->first();
+
+        return [
+            'prev' => $prev,
+            'article' => $article,
+            'next' => $next
+        ];
+    }
+
 }

@@ -1,0 +1,16 @@
+fields:
+    email:
+        label: email
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    content:
+        label: content
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        type: textarea
+    is_show:
+        label: 'is show'
+        span: auto
+        type: switch

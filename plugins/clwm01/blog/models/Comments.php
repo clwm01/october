@@ -15,4 +15,8 @@ class Comments extends Model
     public $table = 'clwm01_blog_comments';
 
     public $timestamps = false;
+
+    public $belongsTo = [
+        'article' => 'Clwm01\Blog\Models\Articles'
+    ];
 }

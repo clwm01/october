@@ -1,0 +1,10 @@
+name: Comments
+modelClass: Clwm01\Blog\Models\Comments
+form: $/clwm01/blog/models/comments/fields.yaml
+defaultRedirect: clwm01/blog/comments
+create:
+    redirect: 'clwm01/blog/comments/update/:id'
+    redirectClose: clwm01/blog/comments
+update:
+    redirect: clwm01/blog/comments
+    redirectClose: clwm01/blog/comments

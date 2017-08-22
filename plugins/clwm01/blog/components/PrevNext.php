@@ -25,13 +25,14 @@ class PrevNext extends Base
     {
         parent::onRun();
 
-        $p = $this->param('page');
-        $articles_count = Articles::where('is_show', 1)->count();
+//        $p = $this->param('page');
+//        $articles_count = Articles::where('is_show', 1)->count();
+
 
         $this->addCss('/plugins/clwm01/blog/assets/css/blog.css');
 
-        $this->page['articles_count'] = $articles_count;
-        $this->page['p'] = $p;
+//        $this->page['articles_count'] = $articles_count;
+//        $this->page['p'] = $p;
     }
 
 }

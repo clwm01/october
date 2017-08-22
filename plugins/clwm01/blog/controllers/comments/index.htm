@@ -2,11 +2,9 @@
 
 <?= Block::put('body') ?>
 <?php if (!$this->fatalError): ?>
-<div class="container-fluid">
     <!--<div class="col-md-8">-->
-        <?= $this->listRender() ?>
+    <?= $this->listRender() ?>
     <!--</div>-->
-</div>
 <?php else: ?>
 <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
 <?php endif ?>

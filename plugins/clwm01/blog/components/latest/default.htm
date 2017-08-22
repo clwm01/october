@@ -1,16 +1,10 @@
+{% if three_articles.article %}
 
-{% if article_not_found %}
-
-<div class="container">
-    No records.
-</div>
-
-{% else %}
 <div class="jumbotron title-js">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3>{{ article.title }}</h3>
+                <h3>{{ three_articles.article.title }}</h3>
             </div>
         </div>
     </div>
@@ -19,9 +13,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            {{ article.content | raw }}
+            {{ three_articles.article.content | raw }}
         </div>
     </div>
+</div>
+
+{% else %}
+
+<div class="container">
+    No records.
 </div>
 
 {% endif %}

@@ -24,12 +24,14 @@ class Comments extends Base
     public function onRun()
     {
         // provided by latest
-        $article_id = $this->page['article_id'];
+        $article_id = $this->page['three_articles']['article']->id;
         // then get all comments for this artcle.
         $this->page['aid'] = $article_id;
 
         // Gets latest available comments.
-        $comments = \Clwm01\Blog\Models\Comments::where('is_show', 1)->orderBy('created_at', 'desc')->skip(0)->take(10)->get();
+        $comments = \Clwm01\Blog\Models\Comments::where('is_show', 1)
+            ->where('article_id', $article_id)
+            ->orderBy('created_at', 'desc')->skip(0)->take(10)->get();
 
         $this->page['comments'] = $comments;
     }
